@@ -5,7 +5,7 @@ const WhySection = () => {
   return (
     <section className="valentine-section bg-card">
       <div className="valentine-container mx-auto max-w-4xl text-center">
-        <h2 className="mb-6 font-display text-3xl font-bold text-foreground md:text-4xl lg:text-5xl">
+        <h2 className="mb-6 font-display text-xl font-bold text-foreground md:text-4xl lg:text-5xl">
           Parce que les mots s'envolent, mais un câlin{" "}
           <span className="valentine-gradient-text">reste gravé à jamais</span>.
         </h2>

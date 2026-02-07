@@ -21,16 +21,16 @@ const HeroSection = () => {
             </span>
           </div>
 
-          <h1 className="mb-6 font-display text-4xl font-bold leading-tight tracking-tight text-foreground md:text-5xl lg:text-6xl">
+          <h1 className=" valentine-gradient-text mb-6 font-display text-2xl font-bold leading-tight tracking-tight text-foreground md:text-5xl lg:text-6xl">
             Ton amour mérite plus qu'un simple{" "}
-            <span className="valentine-gradient-text">"je t'aime"</span>.
+            <span >"je t'aime"</span>.
           </h1>
 
-          <p className="mb-4 font-display text-xl italic text-muted-foreground md:text-2xl">
-            Offre-lui un câlin éternel cette Saint-Valentin.
+          <p className="mb-2 text-muted-foreground ">
+            Le cadeau parfait qui dit "Je t'aime" sans cesse et pour toujours.
           </p>
 
-          <p className="mb-8 max-w-lg font-body text-base leading-relaxed text-muted-foreground md:text-lg">
+          <p className="mb-8 max-w-lg font-body text-base leading-relaxed text-muted-foreground ">
             Découvrez <strong className="text-foreground">Câlin Éternel</strong>, la peluche unique
             qui murmure "je t'aime" à chaque étreinte. Douce, irrésistible, faite pour
             faire battre son cœur plus fort.

@@ -3,48 +3,67 @@ import { Button } from "@/components/ui/button";
 
 const PricingSection = () => {
   return (
-    <section className="valentine-section relative overflow-hidden" style={{ background: "var(--gradient-hero)" }}>
+    <section className="valentine-section relative overflow-hidden" style={{ background: "var(--gradient-romantic)" }}>
       {/* Decorative */}
-      <div className="pointer-events-none absolute -left-20 -top-20 h-60 w-60 rounded-full bg-primary-foreground/5 blur-2xl" />
-      <div className="pointer-events-none absolute -bottom-20 -right-20 h-60 w-60 rounded-full bg-primary-foreground/5 blur-2xl" />
+      <div className="pointer-events-none absolute -left-20 -top-20 h-60 w-60 rounded-full bg-white/5 blur-3xl" />
+      <div className="pointer-events-none absolute -bottom-20 -right-20 h-60 w-60 rounded-full bg-white/5 blur-3xl" />
 
       <div className="valentine-container relative z-10 mx-auto max-w-3xl text-center">
-        <h2 className="mb-4 font-display text-3xl font-bold text-primary-foreground md:text-4xl lg:text-5xl">
-          Seulement 49€
+        <div className="mb-6 inline-block rounded-lg bg-white/20 px-6 py-3 backdrop-blur-sm">
+          <p className="font-body text-sm font-semibold text-white">
+            ⏰ OFFRE FLASH LIMITED — 27% de réduction
+          </p>
+        </div>
+
+        <h2 className="mb-2 font-display text-5xl font-bold text-white md:text-6xl lg:text-7xl">
+          49€
         </h2>
-        <p className="mb-2 font-display text-xl text-primary-foreground/80">
-          L'offre Saint-Valentin qui fait chavirer les cœurs.
+        <p className="mb-1 font-display text-lg text-white/80">
+          <span className="line-through">69€</span>
         </p>
-        <p className="mb-10 font-body text-primary-foreground/60">
-          <span className="text-primary-foreground/40 line-through">69€</span>{" "}
-          <span className="font-semibold text-primary-foreground">49€</span> — Offre flash limitée
+        <p className="mb-8 font-display text-xl text-white/90 font-semibold">
+          L'amour mérite-t-il moins ?
         </p>
 
-        <div className="mx-auto mb-10 grid max-w-xl gap-4 sm:grid-cols-3">
+        <div className="mx-auto mb-10 space-y-3 max-w-2xl">
+          <p className="font-body text-base text-white/90 leading-relaxed">
+            Pour le prix d'un dîner romantique, offrez un compagnon qui durera toute la vie.
+          </p>
+          <p className="font-body text-sm text-white/70">
+            💰 Prix final TTC — Aucun frais caché
+          </p>
+        </div>
+
+        <div className="mx-auto mb-10 grid max-w-2xl gap-3">
           {[
-            { icon: Gift, text: 'Carte "Mon câlin pour la vie" gratuite' },
-            { icon: Truck, text: "Livraison express gratuite" },
-            { icon: Star, text: "500 peluches seulement" },
+            { icon: Gift, text: '✨ Carte personnalisée "Mon câlin pour la vie"' },
+            { icon: Truck, text: "🚚 Livraison express gratuite en 24h" },
+            { icon: Star, text: "📦 Emballage cadeau premium offert" },
+            { icon: Heart, text: "💝 Garantie 30 jours satisfait ou remboursé" },
           ].map((item) => (
             <div
               key={item.text}
-              className="flex flex-col items-center gap-2 rounded-xl bg-primary-foreground/10 p-4 backdrop-blur-sm"
+              className="flex items-center gap-3 rounded-lg bg-white/15 p-4 backdrop-blur-sm border border-white/10"
             >
-              <item.icon className="h-6 w-6 text-primary-foreground" />
-              <p className="font-body text-sm text-primary-foreground/90">{item.text}</p>
+              <item.icon className="h-5 w-5 text-white shrink-0" />
+              <p className="font-body text-sm text-white text-left">{item.text}</p>
             </div>
           ))}
         </div>
 
+        <p className="mb-6 font-body text-xs text-white/60 font-semibold">
+          ⭐ 98.2% de satisfaction | 2,847 amoureux comblés
+        </p>
+
         <Button
           size="lg"
-          className="rounded-full bg-primary-foreground px-12 py-7 font-display text-lg font-bold text-primary shadow-2xl transition-all duration-300 hover:scale-105 hover:bg-primary-foreground/90"
+          className="rounded-full bg-white px-14 py-7 font-display text-lg font-bold text-valentine-rose shadow-2xl transition-all duration-300 hover:scale-105 hover:bg-white/90"
         >
           <Heart className="mr-2 h-5 w-5" fill="currentColor" />
-          Commander maintenant
+          OUI, JE LA VEUX POUR ELLE
         </Button>
-        <p className="mt-4 font-body text-sm text-primary-foreground/60">
-          Ne rate pas sa joie infinie. Stock limité !
+        <p className="mt-4 font-body text-xs text-white/70">
+          ⚡ Processus sécurisé — Livraison avant le 14 février
         </p>
       </div>
     </section>
