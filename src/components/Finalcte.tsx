@@ -23,7 +23,7 @@ const FinalCTA = () => {
           Ne fais pas attendre son sourire.
         </h2>
         <p className="mb-2 font-display text-xl text-primary-foreground/70 md:text-2xl">
-          Offre-lui <span className="text-valentine-rose">Câlin Éternel</span> MAINTENANT.
+          Offre-lui <span className="text-valentine-rose">Ourson</span> MAINTENANT.
         </p>
         <p className="mb-10 font-body text-primary-foreground/50">
           Cette Saint-Valentin, sois le héros de son cœur. Clique, commande, et vis la magie.

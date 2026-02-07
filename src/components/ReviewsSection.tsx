@@ -23,7 +23,7 @@ const reviews = [
   {
     name: "Sophie",
     city: "Bordeaux",
-    text: "Mon copain m'a offert Câlin Éternel, je ne dors plus sans ! Un amour de peluche.",
+    text: "Mon copain m'a offert Ourson, je ne dors plus sans ! Un amour de peluche.",
     avatar: "S",
   },
 ];

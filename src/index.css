@@ -31,7 +31,7 @@
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 20% 90%;
+    --border: 30 10% 96%;
     --input: 0 20% 90%;
     --ring: 0 100% 50%;
 
@@ -88,6 +88,11 @@
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
+  }
+
+  /* Cards: use off-white borders by default, turn passion-red on hover */
+  .valentine-section .group:hover {
+    border-color: hsl(var(--valentine-red));
   }
 }
 

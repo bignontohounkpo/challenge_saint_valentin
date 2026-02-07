@@ -30,7 +30,7 @@ const ProductSection = () => {
         <div className="flex-1">
           <h2 className="mb-2 font-display text-3xl font-bold text-foreground md:text-4xl">
             Rencontre{" "}
-            <span className="valentine-gradient-text">Câlin Éternel</span>
+            <span className="valentine-gradient-text">Ourson Éternel</span>
           </h2>
           <p className="mb-6 font-display text-lg italic text-valentine-crimson">
             Ta complice romantique ultime.

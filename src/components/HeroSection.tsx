@@ -21,9 +21,9 @@ const HeroSection = () => {
             </span>
           </div>
 
-          <h1 className=" valentine-gradient-text mb-6 font-display text-2xl font-bold leading-tight tracking-tight text-foreground md:text-5xl lg:text-6xl">
-            Ton amour mérite plus qu'un simple{" "}
-            <span >"je t'aime"</span>.
+          <h1 className="mb-6 font-display text-2xl font-bold leading-tight tracking-tight text-foreground md:text-5xl lg:text-6xl">
+            L'ourson qui fait fondre {" "}
+            <span className="valentine-gradient-text">les coeurs </span>
           </h1>
 
           <p className="mb-2 text-muted-foreground ">
@@ -31,7 +31,7 @@ const HeroSection = () => {
           </p>
 
           <p className="mb-8 max-w-lg font-body text-base leading-relaxed text-muted-foreground ">
-            Découvrez <strong className="text-foreground">Câlin Éternel</strong>, la peluche unique
+            Découvrez <strong className="text-foreground">Ourson Eternel</strong>, la peluche unique
             qui murmure "je t'aime" à chaque étreinte. Douce, irrésistible, faite pour
             faire battre son cœur plus fort.
           </p>
@@ -49,21 +49,16 @@ const HeroSection = () => {
         <div className="relative flex-1">
           <div className="animate-gentle-float relative">
             {/* Glow behind image */}
-            <div className="absolute inset-0 m-auto h-80 w-80 rounded-full bg-valentine-pink/20 blur-3xl sm:h-96 sm:w-96 md:h-[28rem] md:w-[28rem]" />
+            <div className="absolute inset-0 m-auto h-80 w-80 rounded-full bg-valentine-pink/15 blur-3xl sm:h-96 sm:w-96 md:h-[28rem] md:w-[28rem]" />
 
             {/* Placeholder */}
-            <div className="relative z-10 mx-auto w-80 sm:w-96 md:w-[26rem] drop-shadow-2xl flex items-center justify-center bg-gradient-to-br from-valentine-rose/20 to-valentine-pink/20 rounded-3xl h-96 sm:h-[26rem] md:h-[28rem]">
+            <div className="relative z-10 mx-auto w-80 sm:w-96 md:w-[26rem] drop-shadow-xl flex items-center justify-center  rounded-3xl h-96 sm:h-[26rem] md:h-[28rem]">
               <div className="text-center">
                 <div className="text-8xl mb-4"><img src="/src/assets/images/peluche.png" alt="Câlin Éternel" /></div>
                 {/* <p className="font-display text-lg font-bold text-foreground">Câlin Éternel</p> */}
               </div>
             </div>
 
-            {/* Floating heart decorations */}
-            <div className="absolute -right-4 top-8 animate-heartbeat text-3xl">💕</div>
-            <div className="absolute -left-4 bottom-24 animate-heartbeat text-7xl" style={{ animationDelay: '0.5s' }}>
-              ❤️
-            </div>
           </div>
         </div>
       </div>

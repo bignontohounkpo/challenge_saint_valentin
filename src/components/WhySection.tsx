@@ -12,7 +12,7 @@ const WhySection = () => {
 
         <p className="mx-auto mb-12 max-w-2xl font-body text-lg leading-relaxed text-muted-foreground">
           Les fleurs fanent, les chocolats fondent... Mais{" "}
-          <strong className="text-foreground">Câlin Éternel</strong> ? Elle est le geste qui dit
+          <strong className="text-foreground">Ourson Éternel</strong> ? Elle est le geste qui dit
           "Tu es mon monde" sans un mot. Parfaite pour la Saint-Valentin&nbsp;: elle ravive la flamme,
           crée des souvenirs inoubliables et transforme une soirée en moment magique.
         </p>
@@ -37,7 +37,7 @@ const WhySection = () => {
           ].map((item) => (
             <div
               key={item.title}
-              className="group rounded-2xl bg-valentine-blush p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-soft)]"
+              className="group rounded-2xl border border-border bg-valentine-blush p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-soft)]"
             >
               <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-primary/10">
                 <item.icon className="h-7 w-7 text-primary" fill="currentColor" />
