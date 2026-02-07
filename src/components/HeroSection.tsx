@@ -14,10 +14,10 @@ const HeroSection = () => {
       <div className="valentine-container relative z-10 mx-auto flex max-w-6xl flex-col items-center gap-10 md:flex-row md:gap-16">
         {/* Text content */}
         <div className="flex-1 text-center md:text-left">
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-valentine-blush px-4 py-2">
+          <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-valentine-red/20 px-4 py-2">
             <Heart className="h-4 w-4 text-primary animate-heartbeat" fill="currentColor" />
             <span className="font-body text-sm font-medium text-primary">
-              Édition limitée Saint-Valentin
+              Édition limitée Saint-Valentin 2026
             </span>
           </div>
 

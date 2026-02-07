@@ -1,4 +1,5 @@
-import { Check } from "lucide-react";
+import { Check, Heart } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const features = [
   "40 cm de pur bonheur moelleux",
@@ -17,10 +18,9 @@ const ProductSection = () => {
         <div className="flex-1">
           <div className="relative mx-auto w-64 md:w-80">
             <div className="absolute inset-0 rounded-3xl bg-valentine-rose/20 blur-2xl" />
-            <div className="relative z-10 w-full rounded-3xl bg-gradient-to-br from-valentine-rose/20 to-valentine-pink/20 h-80 flex items-center justify-center">
+            <div className="relative z-10 w-full rounded-3xl bg-gradient-to-br from-valentine-rose/20 to-valentine-pink/20 h-full flex items-center justify-center">
               <div className="text-center">
                 <div className=" mb-4"><img src="/src/assets/images/peluche.png" alt="" /></div>
-                <p className="font-display text-lg font-bold text-foreground">Câlin Éternel</p>
               </div>
             </div>
           </div>
@@ -51,6 +51,17 @@ const ProductSection = () => {
               </li>
             ))}
           </ul>
+
+          <div className="mt-8 flex gap-4">
+            <Button
+              variant="hero"
+              size="lg"
+              className="rounded-full px-10 py-6 text-base md:text-lg"
+            >
+              <Heart className="mr-2 h-5 w-5" fill="currentColor" />
+              Offrir maintenant
+            </Button>
+          </div>
         </div>
       </div>
     </section>

@@ -1,4 +1,5 @@
-import { Star } from "lucide-react";
+import { Star, Heart } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const reviews = [
   {
@@ -68,6 +69,17 @@ const ReviewsSection = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="mt-12 flex justify-center">
+          <Button
+            variant="hero"
+            size="lg"
+            className="rounded-full px-10 py-6 text-base md:text-lg"
+          >
+            <Heart className="mr-2 h-5 w-5" fill="currentColor" />
+            Offrir maintenant
+          </Button>
         </div>
       </div>
     </section>
