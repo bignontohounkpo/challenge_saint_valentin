@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const PricingSection = () => {
   return (
-    <section className="valentine-section relative overflow-hidden" style={{ background: "var(--gradient-romantic)" }}>
+    <section className="valentine-section relative overflow-hidden bg-gradient" style={{ background: "var(--gradient-romantic)" }}>
       {/* Decorative */}
       <div className="pointer-events-none absolute -left-20 -top-20 h-60 w-60 rounded-full bg-white/5 blur-3xl" />
       <div className="pointer-events-none absolute -bottom-20 -right-20 h-60 w-60 rounded-full bg-white/5 blur-3xl" />
@@ -57,10 +57,10 @@ const PricingSection = () => {
 
         <Button
           size="lg"
-          className="rounded-full bg-white px-14 py-7 font-display text-lg font-bold text-valentine-rose shadow-2xl transition-all duration-300 hover:scale-105 hover:bg-white/90"
+          className="rounded-full bg-white px-5 sm:px-8 md:px-14 py-5 font-display text-sm md:text-base lg:text-lg font-bold text-valentine-rose shadow-2xl transition-all duration-300 hover:scale-105 hover:bg-white/90"
         >
           <Heart className="mr-2 h-5 w-5" fill="currentColor" />
-          OUI, JE LA VEUX POUR ELLE
+          OFFRIR MAINTENANT
         </Button>
         <p className="mt-4 font-body text-xs text-white/70">
           ⚡ Processus sécurisé — Livraison avant le 14 février

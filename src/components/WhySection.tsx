@@ -12,12 +12,13 @@ const WhySection = () => {
 
         <p className="mx-auto mb-12 max-w-2xl font-body text-lg leading-relaxed text-muted-foreground">
           Les fleurs fanent, les chocolats fondent... Mais{" "}
-          <strong className="text-foreground">Ourson Éternel</strong> ? Elle est le geste qui dit
-          "Tu es mon monde" sans un mot. Parfaite pour la Saint-Valentin&nbsp;: elle ravive la flamme,
-          crée des souvenirs inoubliables et transforme une soirée en moment magique.
+          <strong className="text-foreground">Ourson Éternel</strong> ? Elle est
+          le geste qui dit "Tu es mon monde" sans un mot. Parfaite pour la
+          Saint-Valentin&nbsp;: elle ravive la flamme, crée des souvenirs
+          inoubliables et transforme une soirée en moment magique.
         </p>
 
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {[
             {
               icon: Heart,
@@ -37,10 +38,13 @@ const WhySection = () => {
           ].map((item) => (
             <div
               key={item.title}
-              className="group rounded-2xl border border-border bg-valentine-blush p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-soft)]"
+              className="group rounded-2xl border border-border bg-valentine-blush p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-soft)] max-w-sm mx-auto md:last:col-span-2 lg:last:col-span-1"
             >
               <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-primary/10">
-                <item.icon className="h-7 w-7 text-primary" fill="currentColor" />
+                <item.icon
+                  className="h-7 w-7 text-primary"
+                  fill="currentColor"
+                />
               </div>
               <h3 className="mb-2 font-display text-xl font-semibold text-foreground">
                 {item.title}

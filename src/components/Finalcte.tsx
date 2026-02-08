@@ -43,7 +43,7 @@ const FinalCTA = () => {
         <Button
           variant="hero"
           size="lg"
-          className="rounded-full px-14 py-8 font-display text-lg md:text-xl"
+          className="rounded-full px-5 sm:px-8 md:px-14 py-6 md:py-8 font-display text-sm md:text-base lg:text-lg"
         >
           <Heart className="mr-2 h-6 w-6" fill="currentColor" />
           JE L'OFFRE POUR LA SAINT-VALENTIN

@@ -13,13 +13,13 @@ const FloatingHearts = () => {
   const [hearts, setHearts] = useState<Heart[]>([]);
 
   useEffect(() => {
-    const generated: Heart[] = Array.from({ length: 20}, (_, i) => ({
+    const generated: Heart[] = Array.from({ length: 12 }, (_, i) => ({
       id: i,
       left: Math.random() * 100,
       size: Math.random() * 20 + 10,
-      duration: Math.random() * 8 + 8,
-      delay: Math.random() * 10,
-      opacity: Math.random() * 0.4 + 0.1,
+      duration: Math.random() * 15 + 15,
+      delay: Math.random() * 20,
+      opacity: Math.random() * 0.3 + 0.1,
     }));
     
     const timeoutId = setTimeout(() => {
