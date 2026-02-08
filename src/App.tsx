@@ -1,4 +1,4 @@
-// import FloatingHearts from "@/components/FloatingHeart";
+import FloatingHearts from "@/components/FloatingHeart";
 import HeroSection from "@/components/HeroSection";
 import WhySection from "@/components/WhySection";
 import ProductSection from "@/components/ProductSection";
@@ -13,7 +13,7 @@ function App() {
  
   return  (
     <div className="min-h-screen bg-background">
-      {/* <FloatingHearts /> */}
+       <FloatingHearts /> 
       <HeroSection />
       <WhySection />
       <ProductSection />
