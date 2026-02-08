@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 const HeroSection = () => {
   return (
     <section
-      className="relative flex min-h-[90dvh] items-center overflow-hidden px-4 py-12 md:px-8 md:py-20 lg:px-12"
+      className="relative flex min-h-[90dvh] items-center overflow-hidden px-4 py-12 md:px-8 lg:px-12"
       style={{ background: "var(--gradient-soft)" }}
     >
       {/* Decorative circles - Standard */}
