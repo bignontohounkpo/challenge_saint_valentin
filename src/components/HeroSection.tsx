@@ -28,7 +28,7 @@ const HeroSection = () => {
             </span>
           </div>
 
-          <h1 className="mb-6 font-display text-2xl md:text-4xl font-bold leading-tight tracking-tight text-foreground lg:text-5xl xl:text-6xl">
+          <h1 className="mb-6 font-display text-2xl md:text-4xl font-bold leading-relaxed  tracking-tight text-foreground lg:text-5xl xl:text-6xl">
             Cette Saint-Valentin, ne lui offre pas juste un cadeau…{" "}
             <span className="valentine-gradient-text">offre-lui une émotion. </span>
           </h1>
