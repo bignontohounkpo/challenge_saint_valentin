@@ -4,25 +4,25 @@ import { Button } from "@/components/ui/button";
 const reviews = [
   {
     name: "Lucas",
-    city: "Paris",
+    city: "cotonou",
     text: "La peluche a fait pleurer ma chérie de joie ! Meilleure Saint-Valentin ever.",
     avatar: "L",
   },
   {
     name: "Marie",
-    city: "Lyon",
+    city: "Porto-Novo",
     text: "Doux comme un baiser, elle la quitte plus ! Merci pour ce moment magique.",
     avatar: "M",
   },
   {
     name: "Alex",
-    city: "Marseille",
+    city: "Abomey-Calavi",
     text: "Offrir l'amour en peluche ? Génial ! Elle adore. Recommandé à 100%.",
     avatar: "A",
   },
   {
     name: "Sophie",
-    city: "Bordeaux",
+    city: "Ouidah",
     text: "Mon copain m'a offert Ourson, je ne dors plus sans ! Un amour de peluche.",
     avatar: "S",
   },

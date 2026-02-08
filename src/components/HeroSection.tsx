@@ -18,7 +18,7 @@ const HeroSection = () => {
       <div className="valentine-container relative z-10 mx-auto flex max-w-7xl flex-col items-center gap-10 lg:flex-row lg:gap-16 xl:gap-24">
         {/* Text content */}
         <div className="flex-1 text-center lg:text-left">
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-valentine-red/20 px-4 py-2">
+          <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-valentine-red/5 px-4 py-2">
             <Heart
               className="h-4 w-4 text-primary animate-heartbeat"
               fill="currentColor"
@@ -29,8 +29,8 @@ const HeroSection = () => {
           </div>
 
           <h1 className="mb-6 font-display text-2xl md:text-4xl font-bold leading-tight tracking-tight text-foreground lg:text-5xl xl:text-6xl">
-            L'ourson qui fait fondre{" "}
-            <span className="valentine-gradient-text">les coeurs </span>
+            Cette Saint-Valentin, ne lui offre pas juste un cadeau…{" "}
+            <span className="valentine-gradient-text">offre-lui une émotion. </span>
           </h1>
 
           <p className="mb-2 text-muted-foreground ">

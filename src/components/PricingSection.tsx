@@ -36,10 +36,10 @@ const PricingSection = () => {
 
         <div className="mx-auto mb-10 grid max-w-2xl gap-3">
           {[
-            { icon: Gift, text: '✨ Carte personnalisée "Mon câlin pour la vie"' },
-            { icon: Truck, text: "🚚 Livraison express gratuite en 24h" },
-            { icon: Star, text: "📦 Emballage cadeau premium offert" },
-            { icon: Heart, text: "💝 Garantie 30 jours satisfait ou remboursé" },
+            { icon: Gift, text: ' Carte personnalisée "Mon câlin pour la vie"' },
+            { icon: Truck, text: " Livraison express gratuite en 24h" },
+            { icon: Star, text: " Emballage cadeau premium offert" },
+            { icon: Heart, text: " Garantie 30 jours satisfait ou remboursé" },
           ].map((item) => (
             <div
               key={item.text}
@@ -63,7 +63,7 @@ const PricingSection = () => {
           OFFRIR MAINTENANT
         </Button>
         <p className="mt-4 font-body text-xs text-white/70">
-          ⚡ Processus sécurisé — Livraison avant le 14 février
+           Processus sécurisé — Livraison avant le 14 février
         </p>
       </div>
     </section>

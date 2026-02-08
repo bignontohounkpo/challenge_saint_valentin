@@ -1,6 +1,6 @@
 import { Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
-// import CountdownTimer from "@/components/CountdownTimer";
+ import CountdownTimer from "@/components/CountdownTimer";
 
 const FinalCTA = () => {
   const peluchesRestantes = 147;
@@ -30,24 +30,26 @@ const FinalCTA = () => {
         </p>
 
         {/* Countdown */}
-        {/* <div className="mb-10 flex justify-center">
+         <div className="mb-10 flex justify-center">
           <CountdownTimer />
-        </div> */}
+        </div> 
 
         <div className="mb-4 flex flex-wrap items-center justify-center gap-4 font-body text-sm text-primary-foreground/60">
-          <span>💰 Prix final : <strong className="text-primary-foreground">49€</strong></span>
-          <span>🚚 Livraison gratuite</span>
-          <span>⚡ Stock épuise vite !</span>
+          <span> Prix final : <strong className="text-primary-foreground">49€</strong></span>
+          <span> Livraison gratuite</span>
+          <span>Stock épuise vite !</span>
         </div>
 
+       <a href="">
         <Button
           variant="hero"
-          size="lg"
-          className="rounded-full px-5 sm:px-8 md:px-14 py-6 md:py-8 font-display text-sm md:text-base lg:text-lg"
+          size="sm"
+          className="rounded-full   px-5 sm:px-8 md:px-14 py-6 md:py-8 font-display text-sm md:text-base lg:text-lg"
         >
           <Heart className="mr-2 h-6 w-6" fill="currentColor" />
-          JE L'OFFRE POUR LA SAINT-VALENTIN
+          OFFRIR MAINTENANT
         </Button>
+        </a> 
       </div>
     </section>
   );
