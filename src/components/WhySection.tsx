@@ -1,8 +1,13 @@
+import { useState } from "react";
+import OrderModal from "@/components/OrderModal";
 import { Heart, Gift, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const WhySection = () => {
+
+    const [openModal, setOpenModal] = useState(false);
   return (
+    <>
     <section className="valentine-section bg-card">
       <div className="valentine-container mx-auto max-w-4xl text-center">
         <h2 className="mb-6 font-display text-xl font-bold text-foreground md:text-4xl lg:text-5xl">
@@ -59,6 +64,7 @@ const WhySection = () => {
             variant="hero"
             size="lg"
             className="rounded-full px-10 py-6 text-base md:text-lg"
+            onClick={() => setOpenModal(true)}
           >
             <Heart className="mr-2 h-5 w-5" fill="currentColor" />
             Offrir maintenant
@@ -66,6 +72,9 @@ const WhySection = () => {
         </div>
       </div>
     </section>
+      <OrderModal open={openModal} onClose={() => setOpenModal(false)} />
+  </>      
+    
   );
 };
 

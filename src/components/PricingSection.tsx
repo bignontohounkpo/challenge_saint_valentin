@@ -1,8 +1,13 @@
+import { useState } from "react";
+import OrderModal from "@/components/OrderModal";
 import { Heart, Gift, Truck, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const PricingSection = () => {
+    const [openModal, setOpenModal] = useState(false);
+  
   return (
+    <>
     <section className="valentine-section relative overflow-hidden bg-gradient" style={{ background: "var(--gradient-romantic)" }}>
       {/* Decorative */}
       <div className="pointer-events-none absolute -left-20 -top-20 h-60 w-60 rounded-full bg-white/5 blur-3xl" />
@@ -30,7 +35,7 @@ const PricingSection = () => {
             Pour le prix d'un dîner romantique, offrez un compagnon qui durera toute la vie.
           </p>
           <p className="font-body text-sm text-white/70">
-            💰 Prix final TTC — Aucun frais caché
+             Prix  TTC — Aucun frais caché
           </p>
         </div>
 
@@ -52,12 +57,13 @@ const PricingSection = () => {
         </div>
 
         <p className="mb-6 font-body text-xs text-white/60 font-semibold">
-          ⭐ 98.2% de satisfaction | 2,847 amoureux comblés
+           98.2% de satisfaction | 2,847 amoureux comblés
         </p>
 
         <Button
           size="lg"
           className="rounded-full bg-white px-5 sm:px-8 md:px-14 py-5 font-display text-sm md:text-base lg:text-lg font-bold text-valentine-rose shadow-2xl transition-all duration-300 hover:scale-105 hover:bg-white/90"
+          onClick={() => setOpenModal(true)}
         >
           <Heart className="mr-2 h-5 w-5" fill="currentColor" />
           OFFRIR MAINTENANT
@@ -67,6 +73,8 @@ const PricingSection = () => {
         </p>
       </div>
     </section>
+    <OrderModal open={openModal} onClose={() => setOpenModal(false)} />
+  </>
   );
 };
 

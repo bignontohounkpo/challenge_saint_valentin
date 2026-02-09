@@ -1,3 +1,5 @@
+import { useState } from "react";
+import OrderModal from "@/components/OrderModal";
 import { Star, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -29,7 +31,10 @@ const reviews = [
 ];
 
 const ReviewsSection = () => {
+    const [openModal, setOpenModal] = useState(false);
+  
   return (
+    <>
     <section className="valentine-section" style={{ background: "var(--gradient-soft)" }}>
       <div className="valentine-container mx-auto max-w-5xl">
         <h2 className="mb-4 text-center font-display text-3xl font-bold text-foreground md:text-4xl">
@@ -76,6 +81,8 @@ const ReviewsSection = () => {
             variant="hero"
             size="lg"
             className="rounded-full px-10 py-6 text-base md:text-lg"
+            onClick={() => setOpenModal(true)}
+
           >
             <Heart className="mr-2 h-5 w-5" fill="currentColor" />
             Offrir maintenant
@@ -83,6 +90,8 @@ const ReviewsSection = () => {
         </div>
       </div>
     </section>
+    <OrderModal open={openModal} onClose={() => setOpenModal(false)} />
+    </>
   );
 };
 
