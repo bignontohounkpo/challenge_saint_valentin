@@ -39,28 +39,28 @@ const CountdownTimer = () => {
         <div className="text-3xl md:text-4xl font-bold text-valentine-rose">
           {String(timeLeft.days).padStart(2, "0")}
         </div>
-        <div className="text-xs md:text-sm text-primary-foreground/60">Jours</div>
+        <div className="text-xs md:text-sm text-black">Jours</div>
       </div>
       <div className="text-2xl text-primary-foreground/40">:</div>
       <div className="text-center">
         <div className="text-3xl md:text-4xl font-bold text-valentine-rose">
           {String(timeLeft.hours).padStart(2, "0")}
         </div>
-        <div className="text-xs md:text-sm text-primary-foreground/60">Heures</div>
+        <div className="text-xs md:text-sm text-black">Heures</div>
       </div>
       <div className="text-2xl text-primary-foreground/40">:</div>
       <div className="text-center">
         <div className="text-3xl md:text-4xl font-bold text-valentine-rose">
           {String(timeLeft.minutes).padStart(2, "0")}
         </div>
-        <div className="text-xs md:text-sm text-primary-foreground/60">Minutes</div>
+        <div className="text-xs md:text-sm text-black">Minutes</div>
       </div>
       <div className="text-2xl text-primary-foreground/40">:</div>
       <div className="text-center">
         <div className="text-3xl md:text-4xl font-bold text-valentine-rose">
           {String(timeLeft.seconds).padStart(2, "0")}
         </div>
-        <div className="text-xs md:text-sm text-primary-foreground/60">Secondes</div>
+        <div className="text-xs md:text-sm text-black">Secondes</div>
       </div>
     </div>
   );
