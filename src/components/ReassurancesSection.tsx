@@ -24,7 +24,7 @@ const items = [
   {
     icon: Leaf,
     title: "Éco-responsable",
-    desc: "Fabriquée en Europe avec matériaux durables.",
+    desc: "Fabriquée  avec  des matériaux durables et de qualité .",
   },
 ];
 
@@ -33,7 +33,7 @@ const ReassuranceSection = () => {
   
   return (
       <>
-    <section className="valentine-section bg-card">
+    <section  id="reassurance" className="valentine-section bg-card">
       <div className="valentine-container mx-auto max-w-5xl">
         <h2 className="mb-4 text-center font-display text-3xl font-bold text-foreground md:text-4xl">
           Paix d'esprit garantie pour ton{" "}
@@ -61,16 +61,15 @@ const ReassuranceSection = () => {
         </div>
 
         <div className="mt-12 flex justify-center">
-          <Button
-            variant="hero"
-            size="lg"
-            className="rounded-full px-10 py-6 text-base md:text-lg"
-            onClick={() => setOpenModal(true)}
-
-          >
-            <Heart className="mr-2 h-5 w-5" fill="currentColor" />
-            Offrir maintenant
-          </Button>
+              <Button
+                variant="hero"
+                size="lg"
+                className="rounded-full px-8 py-5 text-sm md:text-base"
+                onClick={() => setOpenModal(true)}
+              >
+                <Heart className="mr-2 h-4 w-4" fill="currentColor" />
+                Offrir maintenant
+              </Button>
         </div>
       </div>
     </section>

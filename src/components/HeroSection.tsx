@@ -9,6 +9,7 @@ const HeroSection = () => {
   return (
     <>
       <section
+        id="hero"
         className="relative flex min-h-[90dvh] items-center overflow-hidden px-4 py-12 md:px-8 lg:px-12"
         style={{ background: "var(--gradient-soft)" }}
       >
@@ -44,22 +45,24 @@ const HeroSection = () => {
               Le cadeau parfait qui dit "Je t'aime" sans cesse et pour toujours.
             </p>
 
-            <p className="mb-8 max-w-lg font-body text-base leading-relaxed text-muted-foreground">
-              Découvrez{" "}
-              <strong className="text-foreground">Ourson Eternel</strong>, la
-              peluche unique qui murmure "je t'aime" à chaque étreinte. Douce,
-              irrésistible, faite pour faire battre son cœur plus fort.
+            <p className="mb-4 max-w-lg mx-auto lg:mx-0 font-body text-base leading-relaxed text-muted-foreground">
+              Découvrez <strong className="text-foreground">Ourson Eternel</strong>
+              , la peluche unique qui murmure "je t'aime" à chaque étreinte.
+              Douce, irrésistible, faite pour faire battre son cœur plus fort.
             </p>
 
-            <Button
-              variant="hero"
-              size="lg"
-              className="rounded-full px-10 py-6 text-base lg:text-lg"
-              onClick={() => setOpenModal(true)}
-            >
-              <Heart className="mr-2 h-5 w-5" fill="currentColor" />
-              Offrir maintenant
-            </Button>
+            {/* Button */}
+            <div className="flex justify-center lg:justify-start w-full">
+              <Button
+                variant="hero"
+                size="lg"
+                className="rounded-full px-8 py-5 text-sm md:text-base"
+                onClick={() => setOpenModal(true)}
+              >
+                <Heart className="mr-2 h-4 w-4" fill="currentColor" />
+                Offrir maintenant
+              </Button>
+            </div>
 
             <p className="mt-3 font-body text-sm text-muted-foreground">
               🚚 Livraison express avant le 14 février !

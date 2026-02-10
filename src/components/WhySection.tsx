@@ -8,7 +8,7 @@ const WhySection = () => {
     const [openModal, setOpenModal] = useState(false);
   return (
     <>
-    <section className="valentine-section bg-card">
+    <section id="why" className="valentine-section bg-card">
       <div className="valentine-container mx-auto max-w-4xl text-center">
         <h2 className="mb-6 font-display text-xl font-bold text-foreground md:text-4xl lg:text-5xl">
           Parce que les mots s'envolent, mais un câlin{" "}
@@ -60,15 +60,15 @@ const WhySection = () => {
         </div>
 
         <div className="mt-12 flex justify-center">
-          <Button
-            variant="hero"
-            size="lg"
-            className="rounded-full px-10 py-6 text-base md:text-lg"
-            onClick={() => setOpenModal(true)}
-          >
-            <Heart className="mr-2 h-5 w-5" fill="currentColor" />
-            Offrir maintenant
-          </Button>
+              <Button
+                variant="hero"
+                size="lg"
+                className="rounded-full px-8 py-5 text-sm md:text-base"
+                onClick={() => setOpenModal(true)}
+              >
+                <Heart className="mr-2 h-4 w-4" fill="currentColor" />
+                Offrir maintenant
+              </Button>
         </div>
       </div>
     </section>

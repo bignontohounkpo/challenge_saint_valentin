@@ -17,7 +17,7 @@ const ProductSection = () => {
 
   return (
     <>
-      <section
+      <section id="product"
         className="valentine-section"
         style={{ background: "var(--gradient-soft)" }}
       >

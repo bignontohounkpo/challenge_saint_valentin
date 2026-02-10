@@ -11,7 +11,7 @@ const FinalCTA = () => {
   return (
     <>
       {/* Section principale */}
-      <section className="valentine-section relative overflow-hidden bg-white text-black pb-4">
+      <section  id="finalcta" className="valentine-section relative overflow-hidden bg-white text-black pb-4">
         {/* Décorations */}
         <div className="pointer-events-none absolute left-1/4 top-0 h-72 w-72 rounded-full bg-valentine-pink/10 blur-3xl" />
         <div className="pointer-events-none absolute bottom-0 right-1/4 h-72 w-72 rounded-full bg-primary/10 blur-3xl" />

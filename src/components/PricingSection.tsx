@@ -8,7 +8,7 @@ const PricingSection = () => {
   
   return (
     <>
-    <section className="valentine-section relative overflow-hidden bg-gradient" style={{ background: "var(--gradient-romantic)" }}>
+    <section  id="pricing" className="valentine-section relative overflow-hidden bg-gradient" style={{ background: "var(--gradient-romantic)" }}>
       {/* Decorative */}
       <div className="pointer-events-none absolute -left-20 -top-20 h-60 w-60 rounded-full bg-white/5 blur-3xl" />
       <div className="pointer-events-none absolute -bottom-20 -right-20 h-60 w-60 rounded-full bg-white/5 blur-3xl" />
