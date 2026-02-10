@@ -16,15 +16,15 @@ const PricingSection = () => {
       <div className="valentine-container relative z-10 mx-auto max-w-3xl text-center">
         <div className="mb-6 inline-block rounded-lg bg-white/20 px-6 py-3 backdrop-blur-sm">
           <p className="font-body text-sm font-semibold text-white">
-            ⏰ OFFRE FLASH LIMITED — 27% de réduction
+            ⏰ OFFRE FLASH LIMITED — 25% de réduction
           </p>
         </div>
 
         <h2 className="mb-2 font-display text-5xl font-bold text-white md:text-6xl lg:text-7xl">
-          49€
+         30000 FCFA
         </h2>
         <p className="mb-1 font-display text-lg text-white/80">
-          <span className="line-through">69€</span>
+          <span className="line-through">40000 FCFA</span>
         </p>
         <p className="mb-8 font-display text-xl text-white/90 font-semibold">
           L'amour mérite-t-il moins ?

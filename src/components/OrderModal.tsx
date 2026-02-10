@@ -4,12 +4,14 @@ import { X } from "lucide-react";
 type OrderModalProps = {
   open: boolean;
   onClose: () => void;
+  
 };
 
 const OrderModal = ({ open, onClose }: OrderModalProps) => {
   const [nom, setNom] = useState("");
   const [adresse, setAdresse] = useState("");
   const [telephone, setTelephone] = useState("");
+  const [email, setEmail] = useState("");
 
   if (!open) return null;
 
@@ -21,13 +23,11 @@ const OrderModal = ({ open, onClose }: OrderModalProps) => {
 Nom : ${nom}
 Adresse : ${adresse}
 Téléphone : ${telephone}
+Email : ${email}
 
 Merci !`;
 
-    const whatsappLink = `https://wa.me/22956904489?text=${encodeURIComponent(
-      message
-    )}`;
-
+    const whatsappLink = `https://wa.me/22956904489?text=${encodeURIComponent(message)}`;
     window.open(whatsappLink, "_blank");
   };
 
@@ -35,14 +35,10 @@ Merci !`;
     <>
       <div className="fixed inset-0 z-[9999] flex items-center justify-center px-4">
         {/* Overlay */}
-        <div
-          className="absolute inset-0 bg-black/60 backdrop-blur-sm"
-          onClick={onClose}
-        />
+        <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" onClick={onClose} />
 
         {/* Modal Box */}
         <div className="relative z-10 w-full max-w-lg rounded-2xl bg-white p-6 shadow-2xl animate-fadeIn">
-          {/* Close Button */}
           <button
             className="absolute right-4 top-4 rounded-full bg-black/10 p-2 hover:bg-black/20 transition"
             onClick={onClose}
@@ -51,13 +47,19 @@ Merci !`;
           </button>
 
           {/* Title */}
-          <h3 className="mb-2 text-center text-2xl font-bold text-gray-900">
-            Finalise ta commande Saint-Valentin
+          <h3 className="font-display mb-2 text-center text-2xl font-bold text-gray-900">
+            Finaliser la commande
           </h3>
 
-          <p className="mb-6 text-center text-sm text-gray-600">
+          <p className="mb-4 text-center text-sm text-gray-600">
             Remplis ce formulaire puis clique sur envoyer pour continuer sur WhatsApp.
           </p>
+
+          {/* Prix */}
+          <div className="mb-6 text-center">
+            <p className="text-gray-500 line-through">Prix normal : 40000 FCFA</p>
+            <p className="text-pink-600 font-bold text-xl">Prix saint valentin : 30000 FCFA</p>
+          </div>
 
           {/* Form */}
           <form className="space-y-4" onSubmit={handleSubmit}>
@@ -69,7 +71,7 @@ Merci !`;
                 value={nom}
                 onChange={(e) => setNom(e.target.value)}
                 placeholder="Ex : John Doe"
-                className="mt-1 w-full rounded-xl border border-gray-300 px-4 py-3 outline-none focus:border-pink-500 focus:ring-2 focus:ring-pink-200"
+                className="mt-1 w-full rounded-xl  px-4 py-3 outline-none bg-pink-50 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 focus:ring-opacity-50 transition"
               />
             </div>
 
@@ -81,7 +83,7 @@ Merci !`;
                 value={adresse}
                 onChange={(e) => setAdresse(e.target.value)}
                 placeholder="Ex : Cotonou"
-                className="mt-1 w-full rounded-xl border border-gray-300 px-4 py-3 outline-none focus:border-pink-500 focus:ring-2 focus:ring-pink-200"
+                className="mt-1 w-full rounded-xl  px-4 py-3 outline-none bg-pink-50 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 focus:ring-opacity-50 transition"
               />
             </div>
 
@@ -93,7 +95,19 @@ Merci !`;
                 value={telephone}
                 onChange={(e) => setTelephone(e.target.value)}
                 placeholder="Ex : +229 56 90 70 89"
-                className="mt-1 w-full rounded-xl border border-gray-300 px-4 py-3 outline-none focus:border-pink-500 focus:ring-2 focus:ring-pink-200"
+                className="mt-1 w-full rounded-xl px-4 py-3 outline-none bg-pink-50 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 focus:ring-opacity-50 transition"
+              />
+            </div>
+
+            <div>
+              <label className="text-sm font-medium">Email</label>
+              <input
+                type="email"
+                required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="Ex : john@example.com"
+                className="mt-1 w-full rounded-xl  px-4 py-3 outline-none bg-pink-50 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 focus:ring-opacity-50 transition"
               />
             </div>
 
@@ -108,7 +122,6 @@ Merci !`;
         </div>
       </div>
 
-      {/* Animation */}
       <style>{`
         .animate-fadeIn {
           animation: fadeInUp 0.4s ease forwards;

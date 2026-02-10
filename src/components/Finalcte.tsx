@@ -49,7 +49,7 @@ const FinalCTA = () => {
           {/* Infos complémentaires */}
           <div className="mb-4 flex flex-wrap items-center justify-center gap-4 font-body text-sm text-black/60">
             <span>
-              Prix final : <strong className="text-black">49€</strong>
+              Prix final : <strong className="text-black">30000 FCFA</strong>
             </span>
             <span>Livraison gratuite</span>
             <span>Stock épuisé vite !</span>
