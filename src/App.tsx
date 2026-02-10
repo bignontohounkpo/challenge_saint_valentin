@@ -15,8 +15,6 @@ function App() {
     <div className="min-h-screen bg-background">
       <Navbar />
       <FloatingHearts />
-
-      {/* padding top pour éviter que navbar cache le contenu */}
       <div className="pt-20">
         <HeroSection />
         <WhySection />

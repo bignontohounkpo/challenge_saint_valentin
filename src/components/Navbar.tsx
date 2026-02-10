@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Heart, Menu, X } from "lucide-react";
+import {  Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 type NavLink = {
@@ -8,11 +8,10 @@ type NavLink = {
 };
 
 const navLinks: NavLink[] = [
-  { label: "Accueil", href: "#hero" },
   { label: "Pourquoi ", href: "#why" },
   { label: "Presentation", href: "#product" },
-  { label: "Avantages", href: "#benefits" },
-  { label: "Prix", href: "#pricing" },
+  { label: "Bénéfices", href: "#benefits" },
+  { label: "Offre", href: "#pricing" },
   { label: "Garantie", href: "#reassurance" },
   { label: "Avis", href: "#reviews" },
 ];
@@ -50,14 +49,14 @@ const Navbar = () => {
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 md:px-8">
         {/* LOGO */}
         <div
-          className="flex items-center gap-2 cursor-pointer"
+          className="flex items-center  cursor-pointer"
           onClick={() => handleClick("#hero")}
         >
-          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-red-500 to-pink-500 shadow-sm">
-            <Heart className="h-5 w-5 text-white" fill="currentColor" />
+          <div className="flex h-8 w-8 items-center justify-center ">
+            <img src="/peluche.webp" alt="" />
           </div>
           <span className="font-display text-lg font-bold text-foreground">
-            SaintValentin
+            Ourson
           </span>
         </div>
 
