@@ -7,22 +7,22 @@ const benefits = [
   {
     icon: HeartHandshake,
     title: "Émotion pure",
-    desc: "Elle serre Câlin Éternel quand tu n'es pas là, se sentant aimée et protégée.",
+    desc: "Chaque fois qu’elle la serre contre elle, elle ressent ton amour comme si tu étais juste là. C’est ce genre de cadeau qui réchauffe le cœur, rassure, et lui rappelle qu’elle compte énormément pour toi, même quand tu es loin.",
   },
   {
     icon: Clock,
     title: "Souvenir gravé",
-    desc: "Chaque câlin ravive votre histoire d'amour, bien après le 14 février.",
+    desc: "Ce n’est pas une simple peluche… c’est un symbole. Un souvenir vivant qui lui rappellera votre histoire, vos moments forts, vos promesses et vos rires. Même après le 14 février, elle la gardera près d’elle comme une preuve que ton amour est réel.",
   },
   {
     icon: Tv,
     title: "Magie quotidienne",
-    desc: "Parfaite pour les soirées Netflix, les voyages ou les moments complices.",
+    desc: "Parfaite pour les soirées Netflix, les moments de repos, les voyages ou les nuits où elle a juste besoin de douceur. Elle devient rapidement son petit refuge émotionnel : une présence réconfortante qui rend chaque journée plus tendre.",
   },
   {
     icon: InfinityIcon,
     title: "Valeur infinie",
-    desc: 'Un geste qui dit "Je pense à toi" sans effort, pour un bonheur qui ne s\'use pas.',
+    desc: "C’est le genre de cadeau qu’on n’oublie jamais. Parce qu’il dit clairement : « Je pense à toi », « Je veux te voir sourire », « Tu es précieuse ». Une attention simple… mais qui touche profondément et crée un bonheur qui dure bien plus longtemps qu’un bouquet de fleurs.",
   },
 ];
 
